@@ -2,10 +2,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { supabase, User, Appointment } from '@/lib/supabase'
 import { getGoogleAuthUrl } from '@/lib/google-calendar'
-import WeekView from './WeekView'
-import DayView from './DayView'
-import ListView from './ListView'
-import StatsView from './StatsView'
+import { WeekView, DayView, ListView, StatsView } from './WeekView'
 import AppointmentModal from './AppointmentModal'
 
 const AVATAR_COLORS: Record<string, string> = {
